@@ -33,7 +33,7 @@
                     <label for="txtBuscar">Pesquisar</label>
                     <br>
                     <input type="text" name="txtBuscar" placeholder="Buscar...">
-                <button class="btn">
+                <button class="btn" type="submit">
                     <i class="fa fa-search" aria-hidden="true"></i>
                 </button>
             </div>
@@ -46,8 +46,8 @@
                         <option value="pendentes">Pendentes</option>
                         <option value="concluidas">Concluidas</option>
                     </select>
-            </div>
-                </form>
+                </div>
+            </form>
         </div>
             
         <div class="tarefas">
@@ -55,23 +55,13 @@
                     <thead>
                         <tr>
                             <th>Suas Tarefas</th>
-                            <th>Status</th>
                         </tr>
-                        <tr>    <!-- ISAAAAAAACCCC NAO ESQUECE ESSES BOOOTTOOOEESSSS-->
-                            <button id="btn_ckeck"> 
-                                <i class="fa-solid fa-check"></i>
-                            </button>
-
-                            <button id="btn_remove">
-                                <i class="fa fa-trash" aria-hidden="true"></i>
-                            </button>
-                        </tr>
-
+                        <!-- ISAAAAAAACCCC NAO ESQUECE ESSES BOOOTTOOOEESSSS (NAO ESQUECI!) -->
                     </thead>
-                    <?php
-                        include('../src/tarefasbd.php'); //Link para o php sem redirecionar
-                    ?>
-                <tbody>
+                    <tbody>
+                        <?php
+                            include('../src/tarefasbd.php'); //Link para o php sem redirecionar
+                        ?>
                     </tbody>
                 </table>
         </div>

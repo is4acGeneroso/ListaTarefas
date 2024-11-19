@@ -76,22 +76,26 @@
                 <td id='tarefa-{$idTarefa}' name='tarefa-{$idTarefa}'>" . $linha["nome"] . "</td>
                     <form action='../src/btnclicar_concluir.php' method='get'>
                         <input type='hidden' name='tarefaId' value='". $idTarefa. "';>
-                        <td> Pendente </td>
-                        <td><button type='submit'>Concluir</button></td>
+                        <td><button type='submit'>
+                            <i class='fa-solid fa-check'></i>
+                        </button></td>
                     </form>
                     <form action='../src/btnclicar_excluir.php' method='get'>
                         <input type='hidden' name='tarefaId' value='". $idTarefa. "';>
-                        <td><button type='submit'>Deletar</button></td>
+                        <td><button type='submit'>
+                            <i class='fa fa-trash' aria-hidden='true'></i>
+                        </button></td>
                     </form>
                 
                 </tr>";
             } else {
                 echo "<tr>
                 <td>" . $linha["nome"] . "</td>
-                <td> Concluido </td>
                 <form action='../src/btnclicar_excluir.php' method='get'>
                     <input type='hidden' name='tarefaId' value='". $idTarefa. "';>
-                    <td><button type='submit'>Deletar</button></td>
+                    <td><button type='submit'>
+                        <i class='fa fa-trash' aria-hidden='true'></i>
+                    </button></td>
                 </form>
                 </tr>";
             }
@@ -109,12 +113,15 @@
                 <td id='tarefa-{$idTarefa}' name='tarefa-{$idTarefa}'>" . $linha["nome"] . "</td>
                 <form action='../src/btnclicar_concluir.php' method='get'>
                     <input type='hidden' name='tarefaId' value='". $idTarefa. "';>
-                    <td> Pendente </td>
-                    <td><button type='submit'>Concluir</button></td>
+                    <td><button type='submit'>
+                        <i class='fa-solid fa-check'></i>
+                    </button></td>
                 </form>
                 <form action='../src/btnclicar_excluir.php' method='get'>
                     <input type='hidden' name='tarefaId' value='". $idTarefa. "';>
-                    <td><button type='submit'>Deletar</button></td>
+                    <td><button type='submit'>
+                        <i class='fa fa-trash' aria-hidden='true'></i>
+                    </button></td>
                 </form>
                 </tr>";
         }
@@ -129,10 +136,11 @@
             $idTarefa = $linha["id"];
             echo "<tr>
             <td>" . $linha["nome"] . "</td>
-            <td> Concluido </td>
             <form action='../src/btnclicar_excluir.php' method='get'>
                 <input type='hidden' name='tarefaId' value='". $idTarefa. "';>
-                <td><button type='submit'>Deletar</button></td>
+                <td><button type='submit'>
+                    <i class='fa fa-trash' aria-hidden='true'></i>
+                </button></td>
             </form>
             </tr>";
         }
@@ -150,18 +158,26 @@
                 <td id='tarefa-{$idTarefa}' name='tarefa-{$idTarefa}'>" . $linha["nome"] . "</td>
                 <form action='../src/btnclicar_concluir.php' method='get'>
                     <input type='hidden' name='tarefaId' value='". $idTarefa. "';>
-                    <td> Pendente </td>
-                    <td><button type='submit'>Concluir</button></td>
+                    <td><button type='submit'>
+                        <i class='fa-solid fa-check'></i>
+                    </button></td>
                 </form>
                 <form action='../src/btnclicar_excluir.php' method='get'>
                     <input type='hidden' name='tarefaId' value='". $idTarefa. "';>
-                    <td><button type='submit'>Deletar</button></td>
+                    <td><button type='submit'>
+                        <i class='fa fa-trash' aria-hidden='true'></i>
+                    </button></td>
                 </form>
                 </tr>";
             } else {
                 echo "<tr>
                 <td>" . $linha["nome"] . "</td>
-                <td> Concluido </td>
+                <form action='../src/btnclicar_excluir.php' method='get'>
+                <input type='hidden' name='tarefaId' value='". $idTarefa. "';>
+                <td><button type='submit'>
+                    <i class='fa fa-trash' aria-hidden='true'></i>
+                </button></td>
+            </form>
                 </tr>";
             }
             //<td><button>Concluir</button></td>
@@ -179,12 +195,15 @@
             <td id='tarefa-{$idTarefa}' name='tarefa-{$idTarefa}'>" . $linha["nome"] . "</td>
             <form action='../src/btnclicar_concluir.php' method='get'>
                 <input type='hidden' name='tarefaId' value='". $idTarefa. "';>
-                <td> Pendente </td>
-                <td><button type='submit'>Concluir</button></td>
+                <td><button type='submit'>
+                    <i class='fa-solid fa-check'></i>
+                </button></td>
             </form>
             <form action='../src/btnclicar_excluir.php' method='get'>
                 <input type='hidden' name='tarefaId' value='". $idTarefa. "';>
-                <td><button type='submit'>Deletar</button></td>
+                <td><button type='submit'>
+                    <i class='fa fa-trash' aria-hidden='true'></i>
+                </button></td>
             </form>
             </tr>";
         }
@@ -199,10 +218,11 @@
             $idTarefa = $linha["id"];
             echo "<tr>
             <td>" . $linha["nome"] . "</td>
-            <td> Concluido </td>
             <form action='../src/btnclicar_excluir.php' method='get'>
                 <input type='hidden' name='tarefaId' value='". $idTarefa. "';>
-                <td><button type='submit'>Deletar</button></td>
+                <td><button type='submit'>
+                    <i class='fa fa-trash' aria-hidden='true'></i>
+                </button></td>
             </form>
             </tr>";
         }

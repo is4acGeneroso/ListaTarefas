@@ -20,7 +20,7 @@
     
         if($_SERVER["REQUEST_METHOD"] == "GET") {
             $tarefaId = $_GET["tarefaId"]; 
-            $codigoUpdate = "UPDATE tarefas SET estado = '1' WHERE id = '$tarefaId' AND usuarios_idusuario = '$idusuario'";
-            $update = mysqli_query($conn, $codigoUpdate);
+            $codigoUpdate = "DELETE FROM tarefas WHERE id = '$tarefaId' AND usuarios_idusuario = '$idusuario'";
+            $delete = mysqli_query($conn, $codigoUpdate);
         }
 ?>
