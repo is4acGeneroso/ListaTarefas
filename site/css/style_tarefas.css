@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    color: #fff;
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    overflow: visible;
+}
+
+.filtro{
+    grid-area: filtro;
+}
+.addTarefa{
+    grid-area: addTarefa;
+}
+.pesquisa{
+    grid-area: pesquisa;
+    gap: 0px;
+    
+}
+.txtTarefas{
+    grid-area: tarefas;
+}
+
+.pesquisarTarefa{
+    display: flex;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+
+    "titulo titulo titulo"
+    "addTarefa addTarefa addTarefa"
+    "pesquisa pesquisa pesquisa"
+    "tarefas tarefas tarefas";
+
+    grid-gap: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    padding: 20px 50px;       /* tamanho do conteiner*/
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container h1 {
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+h1 {
+    display: flex;
+    grid-area: titulo;
+    display: block; 
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input{
+    height: 30px;
+    margin: 0px;
+    border-style: solid;
+    border-color:  rgb(197, 197, 197);
+    border: 4px;
+    
+}
+select{
+    height: 30px;
+    width: 100%;
+}
+
+.formPesquisa{
+    display: flex;
+    color: blueviolet;
+}
+
+/*Butão de Cima*/
+#btn{
+    height: 30px;
+    margin-left: 0.5%;
+    width: 30px;
+}
+
+/*Butão de baixo */
+.btn {
+    height: 30px;
+    margin-left: 1%;
+    width: 30px;
+}
+
+.txtTarefas p{
+    font-size: larger;
+    text-decoration: underline;
+    margin: 0px;
+}
+
+.addTarefa input{
+  margin-top: 10px;
+  width: 52.5%;
+}
+.pesquisa input{
+    margin-top: 10px;
+    width: 80%;
+}
+.filtro select{
+    margin-top: 10px;
+}
+
+.formPesquisa form{
+    width: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 15px;
+        width: 90%;
+    }
+
+    .inputs input {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .btn {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .text {
+        font-size: 14px;
+    }
+}
